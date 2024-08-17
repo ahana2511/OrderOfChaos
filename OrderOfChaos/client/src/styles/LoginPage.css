@@ -1,0 +1,135 @@
+.login-page {
+    height: 100vh;
+    min-width: 100vw;
+    background: url("../Backgrounds/SecondaryBackground.png") no-repeat;
+    background-size: cover;
+    background-position: left top right bottom;
+    --h2MarginTop: 12vh;
+    --h3MarginTop: 6.5vh;
+}
+
+.login-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.login-container > h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    letter-spacing: 0.35em;
+    line-height: 73px;
+    margin-top: var(--h2MarginTop);
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+}
+
+.logo-login {
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.login-container > h3 {
+    text-align: center;
+    width: 20em;
+    margin-top: var(--h3MarginTop);
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 3rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    position: relative;
+}
+#regno-msg {
+    font-size: max(0.8rem, 11.5px);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    bottom: 3.5rem;
+    display: inline;
+}
+
+.register-form {
+    margin-top: 0.5vh;
+}
+
+.login-submit-btn {
+    padding: 0.5rem 0.3rem;
+    width: 8rem;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+}
+
+.register-submit-btn {
+    padding: 0.5rem 0.8rem;
+    width: 10rem;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+}
+
+.btn-login {
+    letter-spacing: 0.2em;
+    margin-top: 1.5vh;
+}
+
+.btn-login:hover {
+    font-weight: 700;
+}
+
+@media screen and (max-height: 850px) {
+    .login-page {
+        --h2MarginTop: 6vh;
+        --h3MarginTop: 3.5vh;
+    }
+}
+
+@media screen and (max-height: 680px) {
+    .login-page {
+        --h2MarginTop: 3vh;
+        --h3MarginTop: 1.5vh;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .login-container > h2 {
+        font-size: 2rem;
+    }
+    .login-container > h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .login-page {
+        background-image: url(../Backgrounds/PlainBackground.png);
+    }
+    .login-container {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login-container > h2 {
+        font-size: 1.5rem;
+    }
+    .login-container > h3 {
+        font-size: 1.2rem;
+    }
+}

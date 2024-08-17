@@ -1,0 +1,46 @@
+{
+  "name": "CodeWar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "bcrypt": "^5.0.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-ip": "^1.0.4",
+    "express-validator": "^6.10.1",
+    "jsonwebtoken": "^8.5.1",
+    "macaddress": "^0.5.2",
+    "mongoose": "^5.12.6",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.6.0",
+    "prettier": "^2.2.1",
+    "react-markdown": "^6.0.2",
+    "rehype-raw": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/react-copy-to-clipboard": "^5.0.0",
+    "concurrently": "^6.0.2",
+    "nodemon": "^2.0.7",
+    "prettier": "2.2.1"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": false
+  }
+}

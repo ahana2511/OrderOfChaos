@@ -1,0 +1,154 @@
+.question-page {
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    z-index: -1;
+    background: url("../Backgrounds/MainBackground.png") no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    word-spacing: 0.08rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.question-container {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 5rem;
+    width: 90vw;
+    left: 10vw;
+    padding-right: 10vw !important;
+    box-sizing: border-box;
+    height: calc(100vh - 8.5rem);
+    overflow: auto;
+    line-height: 1.8rem;
+    scroll-behavior: smooth;
+}
+
+.question-markdown {
+    margin-right: 5rem;
+}
+
+.question-container > h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.question-container > p {
+    margin-bottom: 1rem;
+}
+
+.question-container button {
+    font-size: 1.3rem;
+}
+
+.answer-container,
+.test-case-container {
+    margin-top: 2rem;
+}
+.question-container > h2,
+.answer-container > h2,
+.test-case-container > h2 {
+    color: #8060c6;
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+}
+
+pre {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.testcase-container {
+    width: 45vw;
+    max-height: 12rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: rgba(196, 196, 196, 0.1);
+    backdrop-filter: blur(140.2px);
+    border-radius: 1.2rem;
+    padding: 1rem;
+    word-wrap: break-word;
+}
+
+.test-case-header {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgba(128, 96, 198, 0.5);
+    padding: 0.5rem;
+}
+
+#test-case {
+    width: 100%;
+    height: 10rem;
+    background-color: rgba(128, 96, 198, 0.2);
+    border-radius: 10px;
+    padding: 0.1rem;
+    overflow: auto;
+}
+
+#attempts-left {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.answer-textarea {
+    background: rgba(196, 196, 196, 0.1);
+    backdrop-filter: blur(140.2px);
+    border-radius: 30px;
+    margin-left: 0;
+    padding: 2rem;
+    width: 92%;
+    height: 20rem;
+    border: none;
+    resize: none;
+    margin-top: 20px;
+}
+
+.answer-textarea:focus {
+    outline: none;
+    border: none;
+}
+.answer-button {
+    position: relative;
+    margin-top: 1rem;
+    left: 40%;
+    border: 1px solid #ffffff;
+    padding: 0.5rem 3.5rem;
+    box-sizing: border-box;
+    border-radius: 10px 0px;
+    margin-bottom: 60px;
+}
+
+.copy-btn {
+    border: 1px #fff;
+    margin-top: 1rem;
+    color: #8060c6;
+    font-weight: 600;
+}
+
+.question-container h2 button i {
+    color: #6d30ed !important;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1023px) {
+    .question-container {
+        display: none;
+    }
+}
+
+.question-container h2 button {
+    margin-left: 20px;
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+}

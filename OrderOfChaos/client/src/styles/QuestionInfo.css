@@ -1,0 +1,23 @@
+.question-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.question-info-purple {
+    color: #8060c6;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.question-info-label {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.question-info > span {
+    font-weight: 700;
+}

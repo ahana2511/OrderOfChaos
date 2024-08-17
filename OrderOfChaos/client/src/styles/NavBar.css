@@ -1,0 +1,63 @@
+.navbar {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    top: 1.5rem;
+    z-index: 3;
+}
+
+.btn-nav {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    cursor: pointer;
+    margin-right: 4vw;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+#logout-btn {
+    border: 2px solid #ffffff;
+    padding: 0.6rem 2rem;
+    box-sizing: border-box;
+    border-radius: 10px 0px;
+}
+
+@media screen and (max-width: 1023px) {
+    .btn-nav {
+        display: none !important;
+    }
+    #logout-btn {
+        display: block !important;
+    }
+    .navbar .event-name {
+        display: none;
+    }
+}
+
+.svg-inline--fa {
+    height: 4vh;
+    width: 4vh;
+    margin: 0;
+    float: left;
+    margin-left: 10vw;
+    margin-right: 1vw;
+}
+
+.navbar span {
+    flex-grow: 1;
+}
+
+.navbar .event-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.navbar .logo {
+    width: 3rem;
+    margin-right: 0.8em;
+}
+.navbar .disable-btn-transform:hover {
+    transform: none !important;
+}
